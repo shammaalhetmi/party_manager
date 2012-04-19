@@ -1,17 +1,12 @@
 PartyManager::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/contact"
   
-  get "pages/about"
-  
-  get "pages/baby"
-  
-  get "pages/graduation"
-  
-  get "pages/generic"
-  
-  get "pages/birthday"
+    match '/contact', :to => 'pages#contact'
+    match '/about',   :to => 'pages#about'
+    match '/baby',   :to => 'pages#baby'
+    match '/graduation',   :to => 'pages#graduation'
+    match '/generic',   :to => 'pages#generic'
+    match '/birthday',   :to => 'pages#birthday'
+    root :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
