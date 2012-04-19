@@ -12,7 +12,7 @@ describe PagesController do
     it "should have the right title" do
       get 'home'
       response.should have_selector("title",
-                        :content => "Party Manager | Home")
+                        :content => "Home")
     end
   end
 
@@ -26,7 +26,7 @@ describe PagesController do
       get 'contact'
       response.should have_selector("title",
                         :content =>
-                          "Party Manager | Contact")
+                          "Contact")
     end
   end
 
@@ -40,7 +40,7 @@ describe PagesController do
       get 'about'
       response.should have_selector("title",
                         :content =>
-                          "Party Manager | About")
+                          "About")
     end
   end
   describe "GET 'baby'" do
@@ -53,7 +53,7 @@ describe PagesController do
       get 'baby'
       response.should have_selector("title",
                         :content =>
-                          "Party Manager | Baby Shower")
+                          "Baby Shower")
     end
   end
   
@@ -67,7 +67,7 @@ describe PagesController do
       get 'birthday'
       response.should have_selector("title",
                         :content =>
-                          "Party Manager | Birthday Party")
+                          "Birthday Party")
     end
   end
   
@@ -81,7 +81,7 @@ describe PagesController do
       get 'generic'
       response.should have_selector("title",
                         :content =>
-                          "Party Manager | Party Time")
+                          "Party Time")
     end
   end
   
@@ -95,7 +95,7 @@ describe PagesController do
       get 'graduation'
       response.should have_selector("title",
                         :content =>
-                          "Party Manager | Graduation Party")
+                          "Graduation Party")
     end
   end
 end
